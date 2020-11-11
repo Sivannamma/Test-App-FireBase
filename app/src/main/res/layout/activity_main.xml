@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:clipChildren="true"
+    android:clipToPadding="false"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextTextName"
+        android:layout_width="142dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:shadowColor="#E91E63"
+        android:text="Name"
+        android:textColorHighlight="#E91E63"
+        android:textColorHint="#E91E63"
+        android:textColorLink="#E91E63"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewName"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <TextView
+        android:id="@+id/TextViewName"
+        android:layout_width="146dp"
+        android:layout_height="40dp"
+        android:shadowColor="#E91E63"
+        android:text="Name"
+        android:textColorHighlight="#E91E63"
+        android:textColorLink="#E91E63"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewRegister"
+        app:layout_constraintVertical_bias="0.076" />
+
+    <TextView
+        android:id="@+id/textViewBirthdate"
+        android:layout_width="140dp"
+        android:layout_height="37dp"
+        android:text="Birthdate"
+        android:textColorHighlight="#E91E63"
+        android:textColorLink="#E91E63"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextName"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <EditText
+        android:id="@+id/editTextTextBirthdate"
+        android:layout_width="156dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:shadowColor="#E91E63"
+        android:text="Birthdate"
+        android:textColorHighlight="#E91E63"
+        android:textColorHint="#E91E63"
+        android:textColorLink="#E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewBirthdate"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBirthdate" />
+
+    <Button
+        android:id="@+id/buttonSaveRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:backgroundTint="#E91E63"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RadioGroupGender"
+        android:onClick="saveRegisterButtonClick"
+        app:layout_constraintVertical_bias="0.175" />
+
+    <TextView
+        android:id="@+id/TextViewRegister"
+        android:layout_width="192dp"
+        android:layout_height="60dp"
+        android:text="Register"
+        android:textColorHighlight="#E91E63"
+        android:textColorLink="#E91E63"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroupGender"
+        android:layout_width="131dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="32dp"
+        android:clipChildren="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextBirthdate"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="119dp"
+            android:layout_height="59dp"
+            android:checked="false"
+            android:text="Male"
+            android:textColor="#070707"
+            android:textColorHighlight="#A89898"
+            android:textColorLink="#E91E63"
+            app:useMaterialThemeColors="true" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="119dp"
+            android:layout_height="57dp"
+            android:text="Female"
+            android:textColorHighlight="#A89898"
+            android:textColorLink="#E91E63" />
+
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
